@@ -53,7 +53,7 @@ try:
     import _inclib  # noqa
     libraries = [
         'zlib', 'lz4', 'webp', 'png', 'jpeg', 'lzf', 'libbz2',
-        'libblosc', 'snappy', 'zstd_static', 'lzma-static', 'openjp2',
+        'snappy', 'zstd_static', 'lzma-static', 'openjp2',
         'lcms2']
     define_macros = [('WIN32', 1), ('LZMA_API_STATIC', 1),
                      ('OPJ_STATIC', 1), ('OPJ_HAVE_LIBLCMS2', 1),
@@ -69,7 +69,7 @@ try:
 
 except ImportError:
     # this works with most recent Debian
-    libraries = ['jpeg', 'lz4', 'zstd', 'lzma', 'bz2', 'png', 'webp', 'blosc',
+    libraries = ['jpeg', 'lz4', 'zstd', 'lzma', 'bz2', 'png', 'webp',
                  'openjp2', 'lcms2', 'z']
     include_dirs.extend(
         ['/usr/include/openjpeg-2.1',
@@ -172,7 +172,7 @@ setup_args = dict(
     install_requires=['numpy>=1.11.3'],
     setup_requires=['setuptools>=18.0', 'numpy>=1.11.3'],  # , 'cython>=0.29.0'
     extras_require={'all': ['matplotlib>=2.2', 'tifffile>=2019.5.22']},
-    tests_require=['pytest', 'tifffile', 'blosc', 'zstd', 'lz4',
+    tests_require=['pytest', 'tifffile', 'zstd', 'lz4',
                    'python-lzf', 'scikit-image'],  # zfpy
     packages=['imagecodecs'],
     package_data={'imagecodecs': ['licenses/*']},
