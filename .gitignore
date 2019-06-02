@@ -52,3 +52,5 @@ MANIFEST
 /.idea
 /*.iml
 
+# Cython artifacts.
+/imagecodecs/_*.c
