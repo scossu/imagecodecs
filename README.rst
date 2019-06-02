@@ -41,7 +41,6 @@ This release has been tested with the following requirements and dependencies
   (8 and 12-bit)
 * `charls-2.0.0 <https://github.com/team-charls/charls>`_
 * `openjpeg 2.3.1 <https://github.com/uclouvain/openjpeg>`_
-* `jxrlib 0.2.1 <https://github.com/glencoesoftware/jxrlib>`_
 * `zfp 0.5.5 <https://github.com/LLNL/zfp>`_
 * `lcms 2.9 <https://github.com/mm2/Little-CMS>`_
 
@@ -86,7 +85,7 @@ current Debian based Linux distributions, run:
     ``$ sudo apt-get install build-essential python3-dev cython3
     python3-setuptools python3-pip python3-wheel python3-numpy
     libz-dev libblosc-dev liblzma-dev liblz4-dev libzstd-dev libpng-dev
-    libwebp-dev libbz2-dev libopenjp2-7-dev libjpeg62-turbo-dev libjxr-dev
+    libwebp-dev libbz2-dev libopenjp2-7-dev libjpeg62-turbo-dev
     liblcms2-dev libtiff-dev``
 
 The imagecodecs package can be challenging to build from source code. Consider

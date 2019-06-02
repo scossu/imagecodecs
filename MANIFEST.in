@@ -36,7 +36,6 @@ include tests/*.npy
 include tests/*.zfp
 include tests/*.png
 include tests/*.jpg
-include tests/*.jxr
 include tests/*.j2k
 include tests/*.jp2
 include tests/*.jls

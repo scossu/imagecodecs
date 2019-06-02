@@ -52,7 +52,7 @@ try:
     # running in Windows development environment
     import _inclib  # noqa
     libraries = [
-        'zlib', 'lz4', 'webp', 'png', 'jxrlib', 'jpeg', 'lzf', 'libbz2',
+        'zlib', 'lz4', 'webp', 'png', 'jpeg', 'lzf', 'libbz2',
         'libblosc', 'snappy', 'zstd_static', 'lzma-static', 'openjp2',
         'lcms2']
     define_macros = [('WIN32', 1), ('LZMA_API_STATIC', 1),
@@ -70,10 +70,9 @@ try:
 except ImportError:
     # this works with most recent Debian
     libraries = ['jpeg', 'lz4', 'zstd', 'lzma', 'bz2', 'png', 'webp', 'blosc',
-                 'openjp2', 'jxrglue', 'jpegxr', 'lcms2', 'z']
+                 'openjp2', 'lcms2', 'z']
     include_dirs.extend(
-        ['/usr/include/jxrlib',
-         '/usr/include/openjpeg-2.1',
+        ['/usr/include/openjpeg-2.1',
          '/usr/include/openjpeg-2.2',
          '/usr/include/openjpeg-2.3'])
     define_macros = [('OPJ_HAVE_LIBLCMS2', 1)]

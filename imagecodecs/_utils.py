@@ -23,7 +23,6 @@ NAMES = {
     'webp': ('webp', ),
     'jpeg': ('jpg', 'jpeg', 'jpe', 'jfif', 'jif'),
     'jpegls': ('jls', 'jpgls', 'jpegls'),
-    'jxr': ('jxr', 'jpegxr'),
     'j2k': ('j2k', 'jp2'),
     'jpeg8': ('jpg8', 'jpeg8'),
     'jpeg12': ('jpg12', 'jpeg12'),
@@ -55,7 +54,6 @@ def imread(filename, codec=None, return_codec=False, **kwargs):
                   imagecodecs.jpegsof3_decode,
                   imagecodecs.jpegls_decode,
                   imagecodecs.j2k_decode,
-                  imagecodecs.jxr_decode,
                   imagecodecs.webp_decode,
                   imagecodecs.zfp_decode,
                   imagecodecs.numpy_decode):
