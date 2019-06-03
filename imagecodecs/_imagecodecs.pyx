@@ -3428,20 +3428,19 @@ def j2k_decode(data, verbose=0, out=None):
     return out
 
 
-def jxr_encode(data, level=None, photometric=None, hasalpha=None,
-               resolution=None, out=None):
-    raise NotImplementedError()
+# Removed modules #############################################################
 
+def jxr_encode(*args, **kwargs):
+    raise NotImplementedError('jxr_encode')
 
-def jxr_decode(data, out=None):
-    raise NotImplementedError()
+def jxr_decode(*args, **kwargs):
+    raise NotImplementedError('jxr_decode')
 
-def blosc_encode(data, level=None, compressor='blosclz', typesize=8,
-                 blocksize=0, shuffle=None, numthreads=1, out=None):
-    raise NotImplementedError()
+def blosc_encode(*args, **kwargs):
+    raise NotImplementedError('blosc_ecode'))
 
-def blosc_decode(data, numthreads=1, out=None):
-    raise NotImplementedError()
+def blosc_decode(*args, **kwargs):
+    raise NotImplementedError('blosc_decode')
 
 
 # JPEG 12-bit #################################################################
