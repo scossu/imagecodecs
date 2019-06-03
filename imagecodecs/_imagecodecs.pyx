@@ -3437,7 +3437,7 @@ def jxr_decode(*args, **kwargs):
     raise NotImplementedError('jxr_decode')
 
 def blosc_encode(*args, **kwargs):
-    raise NotImplementedError('blosc_ecode'))
+    raise NotImplementedError('blosc_ecode')
 
 def blosc_decode(*args, **kwargs):
     raise NotImplementedError('blosc_decode')
